@@ -416,14 +416,6 @@ export class TipPrompt implements Prompt {
 					p("Most modulators behave as you'd expect and work just as if you were moving their associated slider. Click the '?' when you have a setting selected to get more info about it!"),
 				);
 			} break;
-			case "modFilter": {
-				message = div(
-					h2("Filter Target"),
-					p("This setting specifies which parameter of your targeted filter you would like to change."),
-					p("With the 'morph' setting, the note value for your modulator represents the number of a subfilter to 'morph' into over time. For example, dragging a note from 0 to 7 will morph from your main filter to the 7th subfilter. To change how your subfilters are set up, click the '+' button on the target filter."),
-					p("With a Dot setting, you can fine-tune the exact location of every dot on your filter graph. Note that this is extremely intensive if you want to modulate all dots - a morph is better in that case - but this can come in handy for small adjustments."),
-				);
-			} break;
 			case "transitionBar": {
 				message = div(
 					h2("Tie Notes Over Bars"),
@@ -496,8 +488,16 @@ export class TipPrompt implements Prompt {
 						pList,
 					);
 					break;
-				}
-				else {
+				} else if (type.indexOf("modFilter") >= 0) {
+					//@TODO - Actually use the mod filter number
+					message = div(
+						h2("Filter Target"),
+						p("This setting specifies which parameter of your targeted filter you would like to change."),
+						p("With the 'morph' setting, the note value for your modulator represents the number of a subfilter to 'morph' into over time. For example, dragging a note from 0 to 7 will morph from your main filter to the 7th subfilter. To change how your subfilters are set up, click the '+' button on the target filter."),
+						p("With a Dot setting, you can fine-tune the exact location of every dot on your filter graph. Note that this is extremely intensive if you want to modulate all dots - a morph is better in that case - but this can come in handy for small adjustments."),
+					);
+					break;
+				} else {
 					throw new Error("Unhandled TipPrompt type: " + type);
 				}
 		}
