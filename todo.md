@@ -1,0 +1,22 @@
+TEMPORARY. Simply for tracking the fixes needed for this next jummbox PR
+
+- [x] Update packages
+- [x] Align eq filter and note filter zooms
+- [x] Fix missing modfilter tip prompt
+- [ ] Able to hover over bar numbers when in a prompt
+- [ ] Disable instrument randomization in mod channels (song corruptions)
+- [ ] Disable live note recording in mod channels (song corruptions)
+- [ ] Filter Morph when the filters have different filter point counts jumps inconsistently (see https://discord.com/channels/235138363131166728/565164269570883585/1544469151240822865)
+- [ ] Loop bar bug (fixed in UltraBox)
+- [ ] Song detune and detune envelopes
+- [ ] Removing detune from an instrument only works visually when song detune is active
+- [ ] Inconsistent use of unsetMod in change events
+  - [ ] Chorus (missing)
+  - [ ] Pitch Shift (missing)
+  - [ ] Bitcrush and Freq Crush (swapped)
+- [ ] Supersaw dynamism also needs to be clamped (see https://tinyurl.com/2yohngsu)
+- [ ] Move all custom chip classes into their own file and import from there when needed
+- [ ] Custom chip does not work on mobile's held touch events
+- [ ] When editing a custom chip, it resets when the bar changes from "auto follow playhead"
+- [ ] When adding/removing a channel/bar while typing out a pattern number, the internally-counted pattern number does not reset
+- [ ] Unison sign does not work with aliasing.
