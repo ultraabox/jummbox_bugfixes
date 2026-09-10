@@ -17,15 +17,16 @@
 		"url": "git+https://johnnesky@github.com/johnnesky/beepbox.git"
 	},
 	"devDependencies": {
-		"@rollup/plugin-node-resolve": "^9.0.0",
-		"rollup": "^2.32.1",
+		"@rollup/plugin-node-resolve": "^15.1.0",
+		"@types/jquery": "^4.0.1",
+		"rollup": "^2.79.1",
 		"rollup-plugin-sourcemaps": "^0.6.3",
-		"terser": "^5.3.8",
+		"terser": "^5.19.2",
 		"typescript": "^4.9.5"
 	},
 	"dependencies": {
-		"@types/select2": "^4.0.53",
-		"imperative-html": "^0.1.0",
-		"select2": "^4.0.13"
+		"@types/select2": "^4.0.63",
+		"imperative-html": "^0.1.2",
+		"select2": "^4.1.0"
 	}
 }
