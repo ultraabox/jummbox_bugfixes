@@ -6,7 +6,7 @@ TEMPORARY. Simply for tracking the fixes needed for this next jummbox PR
 - [ ] Able to hover over bar numbers when in a prompt
 - [ ] Disable instrument randomization in mod channels (song corruptions)
 - [ ] Disable live note recording in mod channels (song corruptions)
-- [ ] Filter Morph when the filters have different filter point counts jumps inconsistently (see https://discord.com/channels/235138363131166728/565164269570883585/1544469151240822865)
+- [x] Filter Morph when the filters have different filter point counts jumps inconsistently (see https://tinyurl.com/2455tad9)
 - [x] Loop bar bug (fixed in UltraBox)
 - [ ] Song detune and detune envelopes
 - [ ] Removing detune from an instrument only works visually when song detune is active
@@ -22,3 +22,4 @@ TEMPORARY. Simply for tracking the fixes needed for this next jummbox PR
 - [x] Unison sign does not work with aliasing.
 - [ ] Modulating supersaw dynamism produces errors, similar to what spread did in the last jummbox patch
 - [ ] Backspace works in note recording
+- [ ] New blank song does not reset channel names in the channel select dropdown in mod channels
