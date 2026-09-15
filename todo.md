@@ -10,10 +10,10 @@ TEMPORARY. Simply for tracking the fixes needed for this next jummbox PR
 - [ ] Loop bar bug (fixed in UltraBox)
 - [ ] Song detune and detune envelopes
 - [ ] Removing detune from an instrument only works visually when song detune is active
-- [ ] Inconsistent use of unsetMod in change events
-  - [ ] Chorus (missing)
-  - [ ] Pitch Shift (missing)
-  - [ ] Bitcrush and Freq Crush (swapped)
+- [x] Inconsistent use of unsetMod in change events
+  - [x] Chorus (missing)
+  - [x] Pitch Shift (missing)
+  - [x] Bitcrush and Freq Crush (swapped)
 - [ ] Supersaw dynamism also needs to be clamped (see https://tinyurl.com/2yohngsu)
 - [ ] Move all custom chip classes into their own file and import from there when needed
 - [ ] Custom chip does not work on mobile's held touch events

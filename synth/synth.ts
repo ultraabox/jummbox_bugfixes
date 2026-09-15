@@ -7150,7 +7150,7 @@ export class Synth {
     }
 
     public unsetMod(setting: number, channel?: number, instrument?: number) {
-        if (this.isModActive(setting) || (channel != undefined && instrument != undefined && this.isModActive(setting, channel, instrument))) {
+        if (this.isModActive(setting, channel, instrument)) { //isModActive already checks if channel / instrument are not null, thus meaning that we only need to call it once
             this.modValues[setting] = null;
             this.nextModValues[setting] = null;
             for (let i: number = 0; i < this.heldMods.length; i++) {
