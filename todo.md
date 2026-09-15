@@ -14,12 +14,12 @@ TEMPORARY. Simply for tracking the fixes needed for this next jummbox PR
   - [x] Chorus (missing)
   - [x] Pitch Shift (missing)
   - [x] Bitcrush and Freq Crush (swapped)
-- [ ] Supersaw dynamism also needs to be clamped (see https://tinyurl.com/2yohngsu)
+- [x] Supersaw dynamism also needs to be clamped (see https://tinyurl.com/2yohngsu)
 - [ ] Move all custom chip classes into their own file and import from there when needed
 - [ ] Custom chip does not work on mobile's held touch events
 - [ ] When editing a custom chip, it resets when the bar changes from "auto follow playhead"
 - [ ] When adding/removing a channel/bar while typing out a pattern number, the internally-counted pattern number does not reset
 - [x] Unison sign does not work with aliasing.
-- [ ] Modulating supersaw dynamism produces errors, similar to what spread did in the last jummbox patch
 - [ ] Backspace works in note recording
 - [ ] New blank song does not reset channel names in the channel select dropdown in mod channels
+- [ ] Using +/- on mod channels duplicates the channel
