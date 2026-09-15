@@ -7,7 +7,7 @@ TEMPORARY. Simply for tracking the fixes needed for this next jummbox PR
 - [ ] Disable instrument randomization in mod channels (song corruptions)
 - [ ] Disable live note recording in mod channels (song corruptions)
 - [ ] Filter Morph when the filters have different filter point counts jumps inconsistently (see https://discord.com/channels/235138363131166728/565164269570883585/1544469151240822865)
-- [ ] Loop bar bug (fixed in UltraBox)
+- [x] Loop bar bug (fixed in UltraBox)
 - [ ] Song detune and detune envelopes
 - [ ] Removing detune from an instrument only works visually when song detune is active
 - [x] Inconsistent use of unsetMod in change events
@@ -20,3 +20,5 @@ TEMPORARY. Simply for tracking the fixes needed for this next jummbox PR
 - [ ] When editing a custom chip, it resets when the bar changes from "auto follow playhead"
 - [ ] When adding/removing a channel/bar while typing out a pattern number, the internally-counted pattern number does not reset
 - [x] Unison sign does not work with aliasing.
+- [ ] Modulating supersaw dynamism produces errors, similar to what spread did in the last jummbox patch
+- [ ] Backspace works in note recording
