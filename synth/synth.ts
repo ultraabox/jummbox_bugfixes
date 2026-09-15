@@ -9514,7 +9514,7 @@ export class Synth {
             if (aliases) {
                 waveA = wave[(0 | phaseA) % waveLength];
                 waveB = wave[(0 | phaseB) % waveLength];
-                inputSample = waveA + waveB;
+                inputSample = waveA + waveB * unisonSign;
             } else {
                 const phaseAInt: number = phaseA | 0;
                 const phaseBInt: number = phaseB | 0;

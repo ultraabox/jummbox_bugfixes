@@ -19,4 +19,4 @@ TEMPORARY. Simply for tracking the fixes needed for this next jummbox PR
 - [ ] Custom chip does not work on mobile's held touch events
 - [ ] When editing a custom chip, it resets when the bar changes from "auto follow playhead"
 - [ ] When adding/removing a channel/bar while typing out a pattern number, the internally-counted pattern number does not reset
-- [ ] Unison sign does not work with aliasing.
+- [x] Unison sign does not work with aliasing.
